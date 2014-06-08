@@ -1,0 +1,9 @@
+{
+  "name": "alfred-csfd-suggest",
+  "description": "alfed csfd suggest",
+  "version": "0.1.0",
+  "author": "Daniel Husar",
+  "dependencies": {
+    "csfd": "^0.0.2"
+  }
+}
