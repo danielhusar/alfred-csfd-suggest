@@ -1,7 +1,7 @@
 alfred-csfd-suggest
 ===================
 
-[csfd](csfd.cz) workflow for alfred
+[csfd](http://www.csfd.cz) workflow for alfred
 
 You will need [node.js](http://nodejs.org/) to for it to work.
 
