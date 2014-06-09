@@ -4,9 +4,22 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.alfredapp.danielhusar.csfdsuggest</string>
+	<key>category</key>
+	<string>Internet</string>
 	<key>connections</key>
 	<dict>
 		<key>63F60794-BB56-4415-9372-BAF974C3A7E1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4AF45BC6-0F6E-4C2C-9ACF-4B7D6238EAF5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>A8FF9659-99D5-40BE-9343-67D420BD0F56</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -25,9 +38,38 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>CSFD Suggest</string>
+	<string>CSFD</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>36</integer>
+				<key>keyword</key>
+				<string>film</string>
+				<key>runningsubtext</key>
+				<string>Retrieving csfd suggestions ...</string>
+				<key>script</key>
+				<string>node index.js --movie={query}</string>
+				<key>subtext</key>
+				<string>Search csfd with suggestions</string>
+				<key>title</key>
+				<string>Search csfd</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>63F60794-BB56-4415-9372-BAF974C3A7E1</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -53,11 +95,11 @@
 				<key>escaping</key>
 				<integer>36</integer>
 				<key>keyword</key>
-				<string>csfd</string>
+				<string>herec</string>
 				<key>runningsubtext</key>
 				<string>Retrieving csfd suggestions ...</string>
 				<key>script</key>
-				<string>node index.js --movie={query}</string>
+				<string>node index.js --actor={query}</string>
 				<key>subtext</key>
 				<string>Search csfd with suggestions</string>
 				<key>title</key>
@@ -70,24 +112,33 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>63F60794-BB56-4415-9372-BAF974C3A7E1</string>
+			<string>A8FF9659-99D5-40BE-9343-67D420BD0F56</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>asdad</string>
+	<string>csfd workflow for alfred
+
+You will need node.js to for it to work.
+
+Language is set by default to bin/zsh, but if zsh is not your default prompt, you might need to change this to bash. (just open the script filter and change it)</string>
 	<key>uidata</key>
 	<dict>
 		<key>4AF45BC6-0F6E-4C2C-9ACF-4B7D6238EAF5</key>
 		<dict>
 			<key>ypos</key>
-			<real>50</real>
+			<real>100</real>
 		</dict>
 		<key>63F60794-BB56-4415-9372-BAF974C3A7E1</key>
 		<dict>
 			<key>ypos</key>
 			<real>50</real>
+		</dict>
+		<key>A8FF9659-99D5-40BE-9343-67D420BD0F56</key>
+		<dict>
+			<key>ypos</key>
+			<real>170</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
